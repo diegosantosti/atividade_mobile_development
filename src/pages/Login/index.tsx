@@ -33,7 +33,6 @@ export default function Login() {
         <View style={styles.container}>
             <MyInput label='Login' onChangeText={setUsername} />
             <MyInput label='Senha' onChangeText={setPassword} secureTextEntry />
-            <Rolelist/>
             <FullButton title='Entrar' onPress={signIn} />
         </View>
     )

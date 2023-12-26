@@ -3,7 +3,7 @@ import { authStorage } from "./auth.storage"
 
 class UserService {
 
-    private readonly url = 'http://192.168.18.16/users'
+    private readonly url = 'http://192.168.0.109:3030/users'
 
     private async getHeaders() {
         const logged = await authStorage.getLoggedUser()
