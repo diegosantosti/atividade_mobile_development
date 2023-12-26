@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Alert } from 'react-native'
 import { NavigationProp, useNavigation } from '@react-navigation/native'
-
+import Rolelist from '../../components/Rolelist'
 import MyInput from '../../components/MyInput'
 import FullButton from '../../components/FullButton'
 import { authService } from '../../services/auth.service'
@@ -33,7 +33,7 @@ export default function Login() {
         <View style={styles.container}>
             <MyInput label='Login' onChangeText={setUsername} />
             <MyInput label='Senha' onChangeText={setPassword} secureTextEntry />
-
+            <Rolelist/>
             <FullButton title='Entrar' onPress={signIn} />
         </View>
     )

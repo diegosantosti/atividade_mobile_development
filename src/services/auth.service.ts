@@ -2,7 +2,7 @@ import { authStorage } from "./auth.storage"
 
 class AuthService {
 
-    private readonly url = 'http://192.168.1.3:3030/auth'
+    private readonly url = 'http://192.168.18.16:8081/'
 
     public async login(username: string, password: string) {
         const response = await fetch(`${this.url}/login`, {
